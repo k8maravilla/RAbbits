@@ -1,3 +1,16 @@
+'''
+Project Name: rabbits, rabbits, rabbits
+Author: Kaleb Maravilla
+Due Date: 02/15/2023
+Course: CS1400-001
+
+Put your description here, lessons learned here, and any other information someone using your
+program would need to know to make it run.
+
+    - when converting a list to string you just have to concatenate the integers and turn them into the string individually
+    - it is important to pay attention to where you are defining your variables and then calling on them, otherwise they may not work
+'''
+
 import csv
 
 def do_research(cages, adults, babies):
@@ -8,7 +21,7 @@ def do_research(cages, adults, babies):
     
     header = [ 
         
-        #Table of rabbit pairs
+        '# Table of rabbit pairs\n'
         'Month, ', 'Adults, ', 'Babies, ', "Total"
         ]
 
