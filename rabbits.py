@@ -10,6 +10,10 @@ def do_research(cages, adults, babies):
 
     data = []
 
+    my_string = '\n' + str(month)+', ' + str(adults + teens) + ', ' + str(babies) + ', '+ str(total) + '\n'
+    data.append(my_string)
+    
+
     while total < cages: 
         #write to csv file
         adults += teens
@@ -17,10 +21,10 @@ def do_research(cages, adults, babies):
         babies = adults
         total = adults + teens + babies
         month += 1
-        my_list = [month, adults + teens, babies, total]
-        print(my_list)
+        my_string = str(month)+', ' + str(adults + teens) + ', ' + str(babies) + ', '+ str(total) + '\n'
+        data.append(my_string)
         if total > cages:
-            print("cages will run out at month", month)
+            data.append("cages will run out at month " + str(month))
             break
 
     with open('run_rabbits', 'w') as file:
