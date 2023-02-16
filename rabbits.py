@@ -14,9 +14,9 @@ program would need to know to make it run.
 import csv
 
 def do_research(cages, adults, babies):
-    total = 1
     teens = 0
     month = 1
+    total = adults + teens + babies
     my_list = [month, adults + teens, babies, total]
     
     header = [ 
@@ -41,13 +41,12 @@ def do_research(cages, adults, babies):
         my_string = str(month)+', ' + str(adults + teens) + ', ' + str(babies) + ', '+ str(total) + '\n'
         data.append(my_string)
         if total > cages:
-            data.append("cages will run out at month " + str(month))
+            data.append("# Cages will run out in month " + str(month))
             break
 
-    with open('run_rabbits', 'w') as file:
+    with open('rabbits.csv', 'w') as file:
         file.writelines(header)
         file.writelines(data)
-    print('done')
 
 do_research(500,1,0)   
 
