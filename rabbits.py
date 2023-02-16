@@ -17,7 +17,7 @@ def do_research(cages, adults, babies):
     teens = 0
     month = 1
     total = adults + teens + babies
-    my_list = [month, adults + teens, babies, total]
+    #my_list = [month, adults + teens, babies, total]
     
     header = [ 
         
