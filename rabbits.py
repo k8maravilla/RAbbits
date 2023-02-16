@@ -3,8 +3,8 @@ def do_research(cages, adults, babies):
     teens = 0
     month = 1
 
-    while total < cages:
-        
+
+    while total < cages: 
         print(month, adults + teens, babies, total)
         adults += teens
         teens = babies
@@ -14,8 +14,10 @@ def do_research(cages, adults, babies):
         if total > cages:
             print(month, adults + teens, babies, total)
             print("cages will run out at month", month)
+            break
 
-do_research(500, 1, 0)
+
+do_research(500,1,0)   
 
 
 
