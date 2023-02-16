@@ -6,7 +6,11 @@ def do_research(cages, adults, babies):
     month = 1
     my_list = [month, adults + teens, babies, total]
     
-    header = ['Month, ', 'Adults, ', 'Babies, ', "Total"]
+    header = [ 
+        
+        #Table of rabbit pairs
+        'Month, ', 'Adults, ', 'Babies, ', "Total"
+        ]
 
     data = []
 
